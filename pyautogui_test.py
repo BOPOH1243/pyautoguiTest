@@ -9,7 +9,7 @@ def open_calculator():
 
 def find_and_click(image_path):
     """Ищет элемент на экране и кликает по нему."""
-    button = pyautogui.locateOnScreen(image_path, confidence=0.9)
+    button = pyautogui.locateOnScreen(image_path, confidence=0.94)
     if button:
         pyautogui.click(pyautogui.center(button))
     else:
